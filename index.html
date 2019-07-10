@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PSI Gauge</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <div class="container">
+
+      <div class="gauge-section">
+        <h1>PSI CONVERTER</h1>
+        <p>Developed by David Krummen</p>
+        <!-- Visual Meters -->
+        <div class="meters">
+          PSI:<br><output id="psiOutput" type="number" placeholder="0"></output><meter id="psiMeter" value="0" min="0" low="100" optimum="500" high="900" max="1000"></meter><br>
+          BAR:<br><output id="barOutput" type="number" placeholder="0"></output><meter id="barMeter" value="0" min="0" low="100" optimum="500" high="900" max="1000"></meter><br>
+          KG/CM:<br><output id="kgcmOutput" type="number" placeholder="0"></output><meter id="kgMeter" value="0" min="0" low="100" optimum="500" high="900" max="1000"></meter>
+        </div>
+
+        <!-- converter section -->
+        <form class="psi-input">
+          PSI INPUT:<input id="psiInput" type="number" placeholder="0">
+        </form>
+      </div>
+
+    </div>
+  <script src="js/main.js"></script>
+  </body>
+</html>
